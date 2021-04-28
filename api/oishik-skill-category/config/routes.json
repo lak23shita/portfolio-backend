@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/oishik-skill-categories",
+      "handler": "oishik-skill-category.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/oishik-skill-categories/count",
+      "handler": "oishik-skill-category.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/oishik-skill-categories/:id",
+      "handler": "oishik-skill-category.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/oishik-skill-categories",
+      "handler": "oishik-skill-category.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/oishik-skill-categories/:id",
+      "handler": "oishik-skill-category.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/oishik-skill-categories/:id",
+      "handler": "oishik-skill-category.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

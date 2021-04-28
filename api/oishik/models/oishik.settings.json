@@ -1,0 +1,56 @@
+{
+  "kind": "singleType",
+  "collectionName": "oishiks",
+  "info": {
+    "name": "Oishik",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "resume": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "github": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "behance": {
+      "type": "string"
+    },
+    "navColor": {
+      "type": "string"
+    },
+    "home": {
+      "type": "json"
+    },
+    "skills": {
+      "collection": "oishik-skill-category"
+    },
+    "experience": {
+      "collection": "oishik-experience"
+    },
+    "works": {
+      "collection": "oishik-work"
+    }
+  }
+}

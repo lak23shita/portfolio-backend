@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/oishik-works",
+      "handler": "oishik-work.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/oishik-works/count",
+      "handler": "oishik-work.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/oishik-works/:id",
+      "handler": "oishik-work.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/oishik-works",
+      "handler": "oishik-work.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/oishik-works/:id",
+      "handler": "oishik-work.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/oishik-works/:id",
+      "handler": "oishik-work.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+---
+application:
+  name: "portfolio-backend"
+  project: "portfolio"
+  organization: "QoveryCommunity"
+databases:
+- type: "MYSQL"
+  name: "portfolio"
+  version: "5.6"
+routers:
+- name: "main-portfolio-backend"
+  routes:
+  - application_name: "portfolio-backend"
+    paths:
+    - "/*"

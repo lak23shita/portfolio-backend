@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "oishik_skills",
+  "info": {
+    "name": "Oishik Skill"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "integer"
+    },
+    "logo": {
+      "type": "string"
+    }
+  }
+}

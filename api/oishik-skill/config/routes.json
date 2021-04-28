@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/oishik-skills",
+      "handler": "oishik-skill.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/oishik-skills/count",
+      "handler": "oishik-skill.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/oishik-skills/:id",
+      "handler": "oishik-skill.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/oishik-skills",
+      "handler": "oishik-skill.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/oishik-skills/:id",
+      "handler": "oishik-skill.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/oishik-skills/:id",
+      "handler": "oishik-skill.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

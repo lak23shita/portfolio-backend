@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "oishik_experiences",
+  "info": {
+    "name": "Oishik Experience"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

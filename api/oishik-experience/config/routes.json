@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/oishik-experiences",
+      "handler": "oishik-experience.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/oishik-experiences/count",
+      "handler": "oishik-experience.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/oishik-experiences/:id",
+      "handler": "oishik-experience.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/oishik-experiences",
+      "handler": "oishik-experience.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/oishik-experiences/:id",
+      "handler": "oishik-experience.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/oishik-experiences/:id",
+      "handler": "oishik-experience.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

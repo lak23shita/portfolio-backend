@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "oishik_skill_categories",
+  "info": {
+    "name": "Oishik Skill Category"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "skills": {
+      "collection": "oishik-skill"
+    }
+  }
+}

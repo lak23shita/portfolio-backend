@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/oishik",
+      "handler": "oishik.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/oishik",
+      "handler": "oishik.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/oishik",
+      "handler": "oishik.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
