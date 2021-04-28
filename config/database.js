@@ -1,17 +1,29 @@
 module.exports = ({ env }) => ({
-  defaultConnection: "default",
+  defaultConnection: 'default',
   connections: {
     default: {
-      connector: "bookshelf",
+      connector: 'bookshelf',
       settings: {
-        client: "mysql",
-        host: env("DATABASE_HOST", "portfolio-ly81fs1ej6vcnmqt-svc.qovery.io"),
-        port: env.int("DATABASE_PORT", 3306),
-        database: env("DATABASE_NAME", "portfolio"),
-        username: env("DATABASE_USERNAME", "superuser"),
-        password: env("DATABASE_PASSWORD", "tb8PNyObhI27HhwQ"),
+        client: 'postgres',
+        host: env('DATABASE_HOST', 'localhost'),
+        port: env.int('DATABASE_PORT', 5432),
+        database: env('DATABASE_NAME', 'dd55v85a375bdu'),
+        username: env('DATABASE_USERNAME', 'vmbldnujyxgejr'),
+        password: env('DATABASE_PASSWORD', 'fa608a0119ec9916738c1971e465444a1c7d04e2e726f4f82215b442cbc8e764'),
+        schema: env('DATABASE_SCHEMA', 'public'), // Not Required
+        ssl: {
+          rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false), // For self-signed certificates
+        },
       },
-      options: {},
+      options: {
+        ssl: env.bool('DATABASE_SSL', false),
+      },
     },
   },
 });
+
+// Host: ec2-54-166-167-192.compute-1.amazonaws.com
+// Database: 
+// User: 
+// Port: 5432
+// Password: 
